@@ -1,10 +1,12 @@
 import java.util.List;
 
 public class Node {
-	int value;
+	// It's a noode of a tree, contains two children or none if it's a leaf
+	
+	int value; // Only has a value if it is a leaf
 	boolean isMaxPlayer;
-	Node childOne;
-	Node childTwo;
+	Node childOne; // Does not have a value if this node is a leaf
+	Node childTwo; // Does not have a value if this node is a leaf
 	
 	public Node(boolean isMaxPlayer) {
 		this.isMaxPlayer = isMaxPlayer;

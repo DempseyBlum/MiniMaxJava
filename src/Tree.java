@@ -1,5 +1,7 @@
 
 public class Tree {
+	// It's a tree, what do you want?
+	
 	Node root;
 	
 	public Tree(Node root) {

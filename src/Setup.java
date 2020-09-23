@@ -11,6 +11,7 @@ public class Setup {
 	double alpha = Double.NEGATIVE_INFINITY;
 	double beta = Double.POSITIVE_INFINITY;
 	
+	MiniMax minimax = new MiniMax();
 	
-	
+	minimax.BuildTree(depth, leafValues);
 }
