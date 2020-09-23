@@ -74,7 +74,7 @@ public class MiniMax {
 		if (node.isMaxPlayer) {
 			value = Math.max(childOneValue, childTwoValue);
 		} else {
-			value = Math.max(childOneValue, childTwoValue);
+			value = Math.min(childOneValue, childTwoValue);
 		}
 		
 		return value;

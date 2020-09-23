@@ -9,14 +9,14 @@ public class Setup {
 	public static void main (String[] args) {
 		int depth = 3; // Tempt value until user interface is finished, this includes the root.
 		ArrayList LeafValues = new ArrayList<Integer>();
-		LeafValues.add(1); // I
-		LeafValues.add(2); // hate
-		LeafValues.add(3); // arrays
+		LeafValues.add(3); // I
+		LeafValues.add(5); // hate
+		LeafValues.add(1); // arrays
 		LeafValues.add(4); // in
 		LeafValues.add(5); // java
-		LeafValues.add(6);
-		LeafValues.add(7);
+		LeafValues.add(9);
 		LeafValues.add(8);
+		LeafValues.add(7);
 		// Make sure there are 2^(depth-1) values in this array
 		
 
