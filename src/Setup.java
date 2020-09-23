@@ -2,9 +2,6 @@ import java.util.ArrayList;
 
 public class Setup {
 	// NOTE: This only makes binary trees, where each node has 2 children or none if it's a leaf.
-	
-	double alpha = Double.NEGATIVE_INFINITY;
-	double beta = Double.POSITIVE_INFINITY;
 
 	public static void main (String[] args) {
 		int depth = 3; // Tempt value until user interface is finished, this includes the root.
