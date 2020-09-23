@@ -72,9 +72,9 @@ public class MiniMax {
 		int childTwoValue = SearchNode(node.childTwo, currDepth+1);
 		
 		if (node.isMaxPlayer) {
-			value = Math.max(childOneValue, childTwoValue);
+			value = Math.max(childOneValue, childOneValue);
 		} else {
-			value = Math.max(childOneValue, childTwoValue);
+			value = Math.max(childTwoValue, childTwoValue);
 		}
 		
 		return value;
