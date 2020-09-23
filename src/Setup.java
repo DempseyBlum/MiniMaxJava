@@ -26,7 +26,7 @@ public class Setup {
 		
 		int minimaxValue = minimax.SerachTree();
 		
-		System.out.println("MinMax value is: " + minimaxValue);
+		System.out.println("\nMinMax value is: " + minimaxValue);
     }
 	
 }
