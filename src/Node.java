@@ -3,12 +3,11 @@ import java.util.List;
 public class Node {
 	int value;
 	boolean isMaxPlayer;
-	List<Node> children;
+	Node childOne;
+	Node childTwo;
 	
-	public Node( int value, boolean isMaxPlayer, List<Node> children) {
-		this.value = value;
+	public Node(boolean isMaxPlayer) {
 		this.isMaxPlayer = isMaxPlayer;
-		this.children = children;
 	}
 	
 	public int getValue() {
@@ -19,8 +18,12 @@ public class Node {
 		return isMaxPlayer;
 	}
 	
-	public List<Node> getChildren() {
-		return children;
+	public Node getChildOne() {
+		return childOne;
+	}
+	
+	public Node getChildTwo() {
+		return childTwo;
 	}
 	
 	public void setValue(int value) {
@@ -31,7 +34,8 @@ public class Node {
 		this.isMaxPlayer = isMaxPlayer;
 	}
 	
-	public void setChildren(List<Node> children) {
-		this.children = children;
+	public void setChildren(Node childOne, Node childTwo) {
+		this.childOne = childOne;
+		this.childTwo = childTwo;
 	}
 }
