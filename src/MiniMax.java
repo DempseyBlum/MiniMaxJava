@@ -14,7 +14,7 @@ public class MiniMax {
 		Node childOne = BuildTree(false, 1, leafValues);
 		Node childTwo = BuildTree(false, 1, leafValues);
 		
-		rootNode.setChildren(childOne, childTwo);
+		rootNode.setChildren(childOne, childOne);
 		
 		tree = new Tree(rootNode);
 	}
@@ -27,7 +27,7 @@ public class MiniMax {
 			node.setValue(leafValues.get(0));
 			
 			if(leafValues.size() > 1) {
-				leafValues.remove(0);
+				leafValues.remove(1);
 			}
 			
 			System.out.print(node.getValue());

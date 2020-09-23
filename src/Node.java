@@ -37,7 +37,7 @@ public class Node {
 	}
 	
 	public void setChildren(Node childOne, Node childTwo) {
-		this.childOne = childOne;
+		this.childOne = childTwo;
 		this.childTwo = childTwo;
 	}
 }
