@@ -7,7 +7,7 @@ public class Setup {
 	double beta = Double.POSITIVE_INFINITY;
 
 	public static void main (String[] args) {
-		int depth = 4; // Tempt value until user interface is finished, this includes the root.
+		int depth = 3; // Tempt value until user interface is finished, this includes the root.
 		ArrayList LeafValues = new ArrayList<Integer>();
 		LeafValues.add(1);
 		LeafValues.add(2);
@@ -24,7 +24,9 @@ public class Setup {
 		
 		minimax.BuildTree(depth, LeafValues);
 		
-		minimax.SerachTree();
+		int minimaxValue = minimax.SerachTree();
+		
+		System.out.println("MinMax value is: " + minimaxValue);
     }
 	
 }
